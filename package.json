@@ -1,0 +1,31 @@
+{
+  "name": "claustrum",
+  "version": "0.0.1",
+  "description": "A constraint solving library in node, build on top of propagator.js",
+  "main": "claustrum.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/_mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eldritchreality/claustrum.git"
+  },
+  "keywords": [
+    "constraints",
+    "propagators",
+    "solving"
+  ],
+  "author": "eldritchreality",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/eldritchreality/claustrum/issues"
+  },
+  "homepage": "https://github.com/eldritchreality/claustrum#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "propagator.js": "0.0.2"
+  }
+}
