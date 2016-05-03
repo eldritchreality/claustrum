@@ -75,15 +75,18 @@ claustrum.SingleDirectionDivider = function singleDirectionDivider (inputCells,o
 
 claustrum.adder = function adder(inputCells,outputCell) {
     inputCells = coerceToArray(inputCells);
+
+    var summands = inputCells
+    var sum = outputCell 
     
-    function reverseAddition(cellToBackFill) {
-        var subtrahends = inputCells.filter((otherCell) => otherCell !== cellToBackFill);
-        var minuend = [outputCell]; 
-        new claustrum.SingleDirectionSubtracter(minuend.concat(subtrahends),cellToBackFill)
+    function reverseAddition(summandToBackFill) {
+        var subtrahends = inputCells.filter((summand) => summand !== summandToBackFill);
+        var minuend = [sum]; 
+        new claustrum.SingleDirectionSubtracter(minuend.concat(subtrahends),summandToBackFill)
     }
     
     new claustrum.SingleDirectionAdder(inputCells,outputCell);
-    inputCells.forEach(reverseAddition)
+    summands.forEach(reverseAddition)
 }
 
 

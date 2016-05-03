@@ -39,7 +39,7 @@ describe("Maths Operators:",function(){
         })
     })
     
-    describe("The Multi Direction Adder",function(){
+    describe("The Reversible Adder",function(){
        
          it("should take multiple cells and pass the results of adding them to an output cell",function(){
             var input1 = Propagator.makeCell().update(1)
@@ -121,7 +121,7 @@ describe("Maths Operators:",function(){
         })
     }) 
     
-    describe("The Multi Direction Subtracter",function(){
+    describe("The Reversible Subtracter",function(){
        
         it("should take multiple cells and pass the results of subtracting them from the initial cell to an output cell",function(){
             var input1 = Propagator.makeCell().update(100)
@@ -203,7 +203,7 @@ describe("Maths Operators:",function(){
         }) 
     })
     
-    describe("The Multi Direction Multiplier",function(){
+    describe("The Reversible Multiplier",function(){
         
          it("should take multiple cells and pass the results of multiplying them to an output cell",function(){
             var input1 = Propagator.makeCell().update(100)
@@ -285,7 +285,7 @@ describe("Maths Operators:",function(){
         })
     })
     
-    describe("The Multi Direction Divider",function() {
+    describe("The Reversible Divider",function() {
         
          it("should take multiple cells and pass the results of sucessively dividing them to an output cell",function(){
             var input1 = Propagator.makeCell().update(1000)
