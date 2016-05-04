@@ -47,7 +47,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell().update(100)
             var output = Propagator.makeCell()
             
-            claustrum.adder([input1,input2,input3],output);
+            claustrum.maths.adder([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(111);
             
@@ -57,7 +57,7 @@ describe("Maths Operators:",function(){
             var input1 = Propagator.makeCell().update(1)
             var output = Propagator.makeCell()
             
-            claustrum.adder(input1,output);
+            claustrum.maths.adder(input1,output);
             
             expect(output.getContents()).to.equal(1);
         })
@@ -68,7 +68,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell()
             var output = Propagator.makeCell()
             
-            claustrum.adder([input1,input2,input3],output);
+            claustrum.maths.adder([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(undefined);
         })
@@ -79,7 +79,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell().update(100)
             var output = Propagator.makeCell().update(111)
             
-            claustrum.adder([input1,input2,input3],output);
+            claustrum.maths.adder([input1,input2,input3],output);
             
             expect(input1.getContents()).to.equal(1);
         })
@@ -129,7 +129,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell().update(1)
             var output = Propagator.makeCell()
             
-            claustrum.subtracter([input1,input2,input3],output);
+            claustrum.maths.subtracter([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(89);
             
@@ -139,7 +139,7 @@ describe("Maths Operators:",function(){
             var input1 = Propagator.makeCell().update(1)
             var output = Propagator.makeCell()
             
-            claustrum.subtracter(input1,output);
+            claustrum.maths.subtracter(input1,output);
             
             expect(output.getContents()).to.equal(1);
         })
@@ -150,7 +150,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell()
             var output = Propagator.makeCell()
             
-            claustrum.subtracter([input1,input2,input3],output);
+            claustrum.maths.subtracter([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(undefined);
         })
@@ -161,7 +161,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell().update(1)
             var output = Propagator.makeCell().update(89)
             
-            claustrum.subtracter([input1,input2,input3],output);
+            claustrum.maths.subtracter([input1,input2,input3],output);
             
             expect(input1.getContents()).to.equal(100);
         })
@@ -211,7 +211,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell().update(1000)
             var output = Propagator.makeCell()
             
-            claustrum.multiplier([input1,input2,input3],output);
+            claustrum.maths.multiplier([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(1000000);
             
@@ -221,7 +221,7 @@ describe("Maths Operators:",function(){
             var input1 = Propagator.makeCell().update(1)
             var output = Propagator.makeCell()
             
-            claustrum.multiplier(input1,output);
+            claustrum.maths.multiplier(input1,output);
             
             expect(output.getContents()).to.equal(1);
         })
@@ -232,7 +232,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell()
             var output = Propagator.makeCell()
             
-            claustrum.multiplier([input1,input2,input3],output);
+            claustrum.maths.multiplier([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(undefined);
         })         
@@ -243,7 +243,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell().update(1000)
             var output = Propagator.makeCell().update(1000000)
             
-            claustrum.multiplier([input1,input2,input3],output);
+            claustrum.maths.multiplier([input1,input2,input3],output);
             
             expect(input1.getContents()).to.equal(100);
         })
@@ -293,7 +293,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell().update(5)
             var output = Propagator.makeCell()
             
-            claustrum.divider([input1,input2,input3],output);
+            claustrum.maths.divider([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(100);
             
@@ -303,7 +303,7 @@ describe("Maths Operators:",function(){
             var input1 = Propagator.makeCell().update(1)
             var output = Propagator.makeCell()
             
-            claustrum.divider(input1,output);
+            claustrum.maths.divider(input1,output);
             
             expect(output.getContents()).to.equal(1);
         })
@@ -314,7 +314,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell()
             var output = Propagator.makeCell()
             
-            claustrum.divider([input1,input2,input3],output);
+            claustrum.maths.divider([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(undefined);
         })
@@ -325,7 +325,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell()
             var output = Propagator.makeCell().update(100)
             
-            claustrum.divider([input1,input2,input3],output);
+            claustrum.maths.divider([input1,input2,input3],output);
             
             expect(input3.getContents()).to.equal(5);
         })
