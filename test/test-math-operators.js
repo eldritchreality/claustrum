@@ -12,7 +12,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell().update(100)
             var output = Propagator.makeCell()
             
-            var theAdder = new claustrum.SingleDirectionAdder([input1,input2,input3],output);
+            var theAdder = new claustrum.singleDirection.Adder([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(111);
             
@@ -22,7 +22,7 @@ describe("Maths Operators:",function(){
             var input1 = Propagator.makeCell().update(1)
             var output = Propagator.makeCell()
             
-            var theAdder = new claustrum.SingleDirectionAdder(input1,output);
+            var theAdder = new claustrum.singleDirection.Adder(input1,output);
             
             expect(output.getContents()).to.equal(1);
         })
@@ -33,7 +33,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell()
             var output = Propagator.makeCell()
             
-            var theAdder = new claustrum.SingleDirectionAdder([input1,input2,input3],output);
+            var theAdder = new claustrum.singleDirection.Adder([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(undefined);
         })
@@ -94,7 +94,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell().update(1)
             var output = Propagator.makeCell()
             
-            var theSubtracter = new claustrum.SingleDirectionSubtracter([input1,input2,input3],output);
+            var theSubtracter = new claustrum.singleDirection.Subtracter([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(89);
             
@@ -104,7 +104,7 @@ describe("Maths Operators:",function(){
             var input1 = Propagator.makeCell().update(1)
             var output = Propagator.makeCell()
             
-            var theSubtracter = new claustrum.SingleDirectionSubtracter(input1,output);
+            var theSubtracter = new claustrum.singleDirection.Subtracter(input1,output);
             
             expect(output.getContents()).to.equal(1);
         })
@@ -115,7 +115,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell()
             var output = Propagator.makeCell()
             
-            var theSubtracter = new claustrum.SingleDirectionSubtracter([input1,input2,input3],output);
+            var theSubtracter = new claustrum.singleDirection.Subtracter([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(undefined);
         })
@@ -176,7 +176,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell().update(1000)
             var output = Propagator.makeCell()
             
-            var theMultiplier = new claustrum.SingleDirectionMultiplier([input1,input2,input3],output);
+            var theMultiplier = new claustrum.singleDirection.Multiplier([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(1000000);
             
@@ -186,7 +186,7 @@ describe("Maths Operators:",function(){
             var input1 = Propagator.makeCell().update(1)
             var output = Propagator.makeCell()
             
-            var theMultiplier = new claustrum.SingleDirectionMultiplier(input1,output);
+            var theMultiplier = new claustrum.singleDirection.Multiplier(input1,output);
             
             expect(output.getContents()).to.equal(1);
         })
@@ -197,7 +197,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell()
             var output = Propagator.makeCell()
             
-            var theMultiplier = new claustrum.SingleDirectionMultiplier([input1,input2,input3],output);
+            var theMultiplier = new claustrum.singleDirection.Multiplier([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(undefined);
         }) 
@@ -258,7 +258,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell().update(5)
             var output = Propagator.makeCell()
             
-            var theDivider = new claustrum.SingleDirectionDivider([input1,input2,input3],output);
+            var theDivider = new claustrum.singleDirection.Divider([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(100);
             
@@ -268,7 +268,7 @@ describe("Maths Operators:",function(){
             var input1 = Propagator.makeCell().update(1)
             var output = Propagator.makeCell()
             
-            var theDivider = new claustrum.SingleDirectionDivider(input1,output);
+            var theDivider = new claustrum.singleDirection.Divider(input1,output);
             
             expect(output.getContents()).to.equal(1);
         })
@@ -279,7 +279,7 @@ describe("Maths Operators:",function(){
             var input3 = Propagator.makeCell()
             var output = Propagator.makeCell()
             
-            var theDivider = new claustrum.SingleDirectionDivider([input1,input2,input3],output);
+            var theDivider = new claustrum.singleDirection.Divider([input1,input2,input3],output);
             
             expect(output.getContents()).to.equal(undefined);
         })
