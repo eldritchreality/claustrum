@@ -26,6 +26,6 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
-    "propagator.js": "0.0.2"
+    "propagator.js": "0.0.x"
   }
 }
